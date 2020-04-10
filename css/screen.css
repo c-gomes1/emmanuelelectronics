@@ -58,8 +58,8 @@ p,
 footer {
   font-size: 0.8em;
   line-height: 1.3em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   padding-bottom: 0.7em;
 }
 
@@ -190,11 +190,6 @@ nav ul {
   grid-template-rows: repeat(10,auto);
   margin-left: 0.5em;
   margin-right: 0.5em;
-}
-
-#about #team h3,
-#about #team section {
-  border: 0.1em solid black;
 }
 
 #about #team h3 {

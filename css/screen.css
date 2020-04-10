@@ -49,7 +49,8 @@ h1 {
   height: 20em;
 }
 
-h3 {
+h3,
+#enquiry h4 {
   padding: 0.5em 0.5em 0.25em 0.5em;
   text-align: center;
 }
@@ -81,6 +82,27 @@ footer {
 
 #about .employee img {
   width: 4em;
+}
+
+/* Contact */
+
+#contact article {
+  margin: 0 0.5em 0 0.5em;
+}
+
+#contact h4,
+#contact li {
+  font-size: 0.8em;
+}
+
+iframe {
+  height: 20%;
+  width: 95%;
+  width: calc(100% - 1em);
+}
+
+#enquiry {
+  border-top: 0.2em solid black
 }
 
 /* Layout Styles */
@@ -238,3 +260,5 @@ nav ul {
   align-items: center;
   padding: 0.25em;
 }
+
+/* Contact Page */

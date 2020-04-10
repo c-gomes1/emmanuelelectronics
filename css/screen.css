@@ -12,6 +12,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Screen Size = 320px */
 
+
+/*
 html {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 1em;
@@ -103,6 +105,25 @@ iframe {
 
 #enquiry {
   border-top: 0.2em solid black
+}
+
+#contact ol li,
+#phone,
+#email {
+  background: url('../media/img/loc-icon.png') no-repeat top left;
+  list-style: none;
+  padding-bottom: 0.5em;
+  /* Padding for icon image */
+  padding-left: 35px;
+  padding-top: 4px;
+}
+
+#phone {
+  background: url('../media/img/phone-icon.png') no-repeat top left;
+}
+
+#email {
+  background: url('../media/img/email-icon.png') no-repeat top left;
 }
 
 /* Prodcts Page */

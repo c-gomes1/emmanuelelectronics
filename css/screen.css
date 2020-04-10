@@ -63,6 +63,10 @@ footer {
   padding-bottom: 0.7em;
 }
 
+footer {
+  padding: 0.5em;
+}
+
 /* About Page */
 
 #about #description img {
@@ -186,8 +190,9 @@ nav ul {
 
 #about #team {
   display: grid;
+  grid-gap: 1em;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(8,auto);
   margin-left: 0.5em;
   margin-right: 0.5em;
 }

@@ -105,6 +105,25 @@ iframe {
   border-top: 0.2em solid black
 }
 
+/* Prodcts Page */
+
+#products img {
+  margin: 0 0.5em 0 0.5em;
+  width: 95%;
+  width: calc(100% - 1em);
+}
+
+#products h4 {
+  text-align: center;
+}
+
+#products main h3,
+#fc,
+#inverter {
+  background-color: black;
+  color: white;
+}
+
 /* Layout Styles */
 
 /* Screen Size = 320px */

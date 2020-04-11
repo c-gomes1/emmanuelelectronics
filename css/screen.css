@@ -18,7 +18,8 @@ html {
   line-height: 1.2em;
 }
 
-header {
+header,
+footer {
   background-color: black;
   color: white;
 }
@@ -33,23 +34,51 @@ h1 {
 
 a {
   text-decoration: none;
+}
+
+.page-link a {
+  color: blue;
+}
+
+footer a {
+  color: pink;
+}
+
+footer a:hover,
+a:hover {
+  color: hotpink;
+}
+
+footer a:active,
+a:active {
+  color: red;
+}
+
+nav a {
   color: black;
 }
 
-a:hover {
+nav a:hover {
   background-color: #ddd;
 }
 
-a:active {
+a {
+  color: #999;
+}
+
+nav a:active {
   background-color: #888;
   color: white;
 }
 
-h2 {
+#slogan {
+  background-color: blue;
   color: white;
   font-family: 'Pacifico', cursive;
-  font-size: 1.8em;
+  font-size: 1.2em;
+  font-style: oblique;
   line-height: 1.2em;
+  padding: 0.1em 0.5em 0.1em 0.5em;
   text-align: center;
 }
 
@@ -64,16 +93,45 @@ footer {
   padding: 0.5em;
 }
 
-#home-description {
-  background-image: url("../media/img/light-bulb-2.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 75vh;
-}
-
 #emmanuel-logo {
   width: 6em;
 }
+
+#robo {
+  width: 7em;
+}
+
+#products-description .prod-img {
+  padding: 0.5em;
+  width: 80%;
+}
+
+#builder {
+  text-align: center;
+  width: 10em;
+}
+
+#telephone {
+  width: 7em;
+  margin-left: 10em;
+}
+
+#contact-description i {
+  display: block;
+}
+
+#contact-description p {
+  line-height: 1.3em;
+  text-align: right;
+  margin-right: 2em;
+}
+
+#products-description .page-link,
+#contact-description .page-link {
+  margin-top: 0.5em;
+}
+
+
 
 /* Layout Styles */
 
@@ -85,7 +143,7 @@ nav ul {
   display: flex;
 }
 
-ul a {
+nav ul a {
   display: flex;
   flex-direction: column;
 }
@@ -98,18 +156,78 @@ ul a {
   }
 }
 
-#home-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 #emmanuel-logo {
   margin-bottom: 1em;
   order: -1;
 }
 
-#home-description h2 {
-  margin-bottom: 2em;
+#contact-description {
+  margin-bottom: 1em;
+}
+
+#about-description,
+#products-description {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+#products-description {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#robo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#about-description p {
+  grid-column: 1 / -1;
+}
+
+#builder {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  padding: 3em 0 0.5em 4.5em;
+}
+
+#products-description h2,
+#contact-description h2 {
+  font-size: 1.1em;
+  font-style: oblique;
+  font-weight: bold;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  text-align: center;
+}
+
+#contact-description h2 {
+  margin: 3em 0 0.5em 1em;
+  text-align: left;
+}
+
+#products-description .prod-img {
+  grid-row: 3 / 4;
+}
+
+#products-description p {
+  grid-column: 1 / -1;
+  padding-left: 4.5em;
+}
+
+@supports (display:grid) {
+  #about-description h2 {
+    font-size: 1.7em;
+    font-style: italic;
+  }
+
+  #about-description p {
+    padding: 0.5em;
+    margin-left: 1em;
+  }
+
+  .page-link {
+    color: blue;
+  }
+
 }

@@ -38,20 +38,19 @@ h1 {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: black;
 }
 
-nav ul li{
-  text-align: center;
+a:hover {
+  background-color: #ddd;
 }
 
-nav ul:last-child {
-  border-bottom: 0.25em solid black;
+a:active {
+  background-color: #888;
+  color: white;
 }
 
-nav i {
-  margin-right: 0.25em;
-}
+
 
 #home article {
   padding: 0.5em;
@@ -77,12 +76,19 @@ footer {
 
 nav ul {
   display: flex;
+}
+
+ul a {
+  display: flex;
   flex-direction: column;
 }
+
 
 @supports (display:flex) {
 
   nav ul li {
-    padding: 0.25em;
+    flex: 1 0 auto;
+    padding: 0.5em;
+    text-align: center;
   }
 }

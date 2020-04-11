@@ -132,6 +132,22 @@ footer {
   margin-top: 0.5em;
 }
 
+#contact-description::before {
+  content: "";
+  display: block;
+  border-top: 0.25em solid black;
+  margin-top: 1em;
+  margin-left: 13em;
+  width: 30%;
+}
+
+#about-description::after {
+  content: "";
+  display: block;
+  border-top: 0.25em solid black;
+  margin-top: 1.5em;
+  width: 80%;
+}
 
 
 /* Layout Styles */
@@ -189,7 +205,7 @@ nav ul a {
 #builder {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
-  padding: 3em 0 0.5em 4.5em;
+  padding: 1em 0 0.5em 4.5em;
 }
 
 #products-description h2,
@@ -203,7 +219,7 @@ nav ul a {
 }
 
 #contact-description h2 {
-  margin: 3em 0 0.5em 1em;
+  margin: 2em 0 0.5em 1em;
   text-align: left;
 }
 

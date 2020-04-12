@@ -163,7 +163,9 @@ footer {
 
 #about h3,
 #contact h3,
-#enquiry h4 {
+#products h3,
+#enquiry h4,
+#products h4 {
   font-size: 1.2em;
   font-weight: bold;
   padding-bottom: 0.25em;
@@ -223,6 +225,132 @@ iframe {
 form {
   margin: 0.5em auto 0.5em auto;
 }
+
+/* Products Page */
+
+#products h3 {
+  margin-top: 0.5em;
+}
+
+#products h4 {
+  font-size: 1em;
+}
+
+#products main p {
+  font-size: 0.8em;
+  padding: 0 0.5em 0 0.5em;
+}
+
+#products .prod-img {
+  width: 5em;
+  margin: 0.5em auto;
+}
+
+.carousel {
+  border: 0.2em solid black;
+  margin: 0.5em;
+  display: flex;
+  height: 70vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  padding: 0.5em;
+  flex: 0 0 90%;
+}
+
+.carousel:last-child::after{
+  border: 0.1em solid white;
+  content: "";
+  display: block;
+  margin: -0.4em;
+}
+
+@supports (scroll-snap-align: start) {
+  /* modern scroll snap points */
+  .carousel {
+    scroll-snap-type: x mandatory;
+  }
+  .carousel-item {
+    scroll-snap-align: center;
+  }
+}
+
+@supports not (scroll-snap-align: start) {
+  /* old scroll snap points spec */
+  .carousel {
+    -webkit-scroll-snap-type: mandatory;
+            scroll-snap-type: mandatory;
+    -webkit-scroll-snap-destination: 0% center;
+            scroll-snap-destination: 0% center;
+    -webkit-scroll-snap-points-x: repeat(100%);
+            scroll-snap-points-x: repeat(100%);
+  }
+
+  .carousel-item {
+    scroll-snap-coordinate: 0 0;
+  }
+}
+
+.indicators {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+ul.indicators {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.indicator {
+  padding: 10px;
+}
+
+.indicator-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.indicator-button:after {
+  content: '○';
+  font-size: 1.4em;
+  padding: 12px 15px 17px;
+}
+
+.indicator-button:hover {
+  color: #666
+}
+
+.indicator-button:active {
+  color: #999;
+  padding: 0;
+}
+
+.indicator-button[aria-pressed="true"]:after {
+  content: '●';
+}
+
 
 
 /* Layout Styles */

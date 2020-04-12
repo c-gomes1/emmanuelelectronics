@@ -292,15 +292,11 @@ form {
   /* old scroll snap points spec */
   .carousel {
     -webkit-scroll-snap-type: mandatory;
-            scroll-snap-type: mandatory;
     -webkit-scroll-snap-destination: 0% center;
-            scroll-snap-destination: 0% center;
     -webkit-scroll-snap-points-x: repeat(100%);
-            scroll-snap-points-x: repeat(100%);
   }
 
   .carousel-item {
-    scroll-snap-coordinate: 0 0;
   }
 }
 
@@ -384,13 +380,6 @@ form {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
-
-
-
-
-
-
 
 
 /* Layout Styles */

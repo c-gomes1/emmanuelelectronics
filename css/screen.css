@@ -87,7 +87,7 @@ nav a:active {
 }
 
 article {
-  padding: 0.5em;
+  padding: 1em;
 }
 
 
@@ -141,8 +141,8 @@ footer {
   display: block;
   border-top: 0.25em solid black;
   margin-top: 1em;
-  margin-left: 13em;
-  width: 30%;
+  margin-left: 12em;
+  width: 32%;
 }
 
 #about-description::after {
@@ -156,12 +156,14 @@ footer {
 /* About Page */
 
 #about #description img {
-  margin-left: -0.5em;
+  margin-left: -1em;
   margin-bottom: 0.5em;
   width: 100vw;
 }
 
-#about h3 {
+#about h3,
+#contact h3,
+#enquiry h4 {
   font-size: 1.2em;
   font-weight: bold;
   padding-bottom: 0.25em;
@@ -173,13 +175,53 @@ footer {
   margin-bottom: 0.5em;
 }
 
-#about #description::after {
+#about #description::after,
+#contact #contactInfo::after {
   border-bottom: 0.2em solid black;
   content: "";
   display: block;
   margin: 0 auto;
   padding-top: 1em;
   width: 50%;
+}
+
+/* Contact Page */
+
+#contactInfo h4 {
+  font-style: italic;
+  padding: 0.5em 0 0.5em 0;
+}
+
+#contactInfo li {
+  font-size: 0.8em;
+}
+
+#contactInfo ol li,
+#phone,
+#email {
+  background: url('../media/img/loc-icon.png') no-repeat top left;
+  list-style: none;
+  padding-bottom: 0.5em;
+  /* Padding for icon image */
+  padding-left: 35px;
+  padding-top: 4px;
+}
+
+#phone {
+  background: url('../media/img/phone-icon.png') no-repeat top left;
+}
+
+#email {
+  background: url('../media/img/email-icon.png') no-repeat top left;
+}
+
+iframe {
+  height: 200px;
+  width: 100%;
+}
+
+form {
+  margin: 0.5em auto 0.5em auto;
 }
 
 
@@ -337,4 +379,27 @@ nav ul a {
   margin: 0 auto;
   padding-bottom: 0.25em;
   padding-top: 0.25em;
+}
+
+/* Contact Page */
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+@supports (display:grid) {
+  form * {
+    margin: 0.5em 0 0.5em 0;
+  }
+
+  .inp-btn {
+    grid-column: 1 / -1;
+    margin-top: 0.25em;
+  }
+
+  label {
+    padding-right: 0.5em;
+  }
 }

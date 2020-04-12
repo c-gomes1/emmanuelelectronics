@@ -384,7 +384,7 @@ form {
 #prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45vh;
   width: auto;
   padding: 0.25em;
   color: white;

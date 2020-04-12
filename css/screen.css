@@ -54,6 +54,10 @@ a:active {
   color: red;
 }
 
+nav {
+  background-color: white;
+}
+
 nav a {
   color: black;
 }

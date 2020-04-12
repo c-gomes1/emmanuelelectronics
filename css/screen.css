@@ -276,7 +276,6 @@ form {
   border: 0.1em solid white;
   content: "";
   display: block;
-  margin: -0.4em;
 }
 
 @supports (scroll-snap-align: start) {
@@ -305,51 +304,92 @@ form {
   }
 }
 
-.indicators {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+.drop-down {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
 }
 
-ul.indicators {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.indicator {
-  padding: 10px;
-}
-
-.indicator-button {
+.prod-selected {
   cursor: pointer;
-  background: none;
-  border: none;
-  color: #333;
+  height: 1.5em;
+  line-height: 1.6em;
+  border-radius: 0.25em;
+  background: #F9F9F9;
+  border: 1px solid #AAA;
+  border-bottom: 1px solid #777;
+  color: #282D31;
+  z-index: 3;
+  position: relative;
+  -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
+  -webkit-transition-delay: .8s;
+  text-align: center;
+}
+
+.prod-selected:hover,
+.products-drop-down:hover ~ .prod-selected {
+  background: #fff;
+  -webkit-transition-delay: 0s, 0s, 0s;
+}
+
+.products-drop-down:hover ~ .prod-selected {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 0;
+}
+
+.products-drop-down {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 0;
+  width: 99%;
+  padding-top: 1.8em;
+  -webkit-transition: height .5s ease;
+  -webkit-transition-delay: .4s;
+  border: 1px solid #777;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
 }
 
-.indicator-button:after {
-  content: '○';
-  font-size: 1.4em;
-  padding: 12px 15px 17px;
+.drop-down:active .products-drop-down {
+  height: 12.5em;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
 }
 
-.indicator-button:hover {
-  color: #666
+.products-drop-down:hover {
+  height: 9em;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
 }
 
-.indicator-button:active {
-  color: #999;
-  padding: 0;
+.products-drop-down li:hover {
+  background: #eee;
+  color: #333;
 }
 
-.indicator-button[aria-pressed="true"]:after {
-  content: '●';
+.products-drop-down li {
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+  height: 1.5em;
+  border-top: 1px solid #ccc;
+  padding: 0.25em 0 0.25em 0;
 }
+
+.products-drop-down li:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+
 
 
 

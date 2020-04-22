@@ -10,4 +10,114 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * https://www.modularscale.com/?1.2&em&1.414
 */
 
-/* Screen Size = 320px */
+/* Screen Size = 120px */
+
+html {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.414em;
+  line-height: 1.414em;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a {
+  color: pink;
+}
+
+footer a:hover,
+a:hover {
+  color: hotpink;
+}
+
+footer a:active,
+a:active {
+  color: red;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+nav a:active {
+  background-color: #888;
+  color: white;
+}
+
+#slogan {
+  background-color: blue;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.1em;
+  font-style: oblique;
+  line-height: 1.4em;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  text-align: center;
+}
+
+footer {
+  font-size: 0.707em;
+  line-height: 1.414em;
+  padding: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* Layout Styles */
+
+#social-media {
+  display: none; /* Will be handled in Project #4 */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul a {
+  display: flex;
+  flex-direction: column;
+}
+
+@supports (display:flex) {
+  nav ul li {
+    flex: 1 0 auto;
+    padding: 0.1em;
+    text-align: center;
+  }
+}
+
+
+
+/* Module Styles */
+
+header,
+footer {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  background-color: white;
+}
+
+nav a {
+  background-color: #222;
+  color: #bbb;
+  padding: 0.25em;
+}

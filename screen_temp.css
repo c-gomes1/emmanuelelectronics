@@ -1,87 +1,15 @@
 
-html {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 1em;
-  line-height: 1.2em;
-}
 
-header,
-footer {
-  background-color: black;
-  color: white;
-}
-
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.414em;
-  text-align: center;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-}
-
-a {
-  text-decoration: none;
-}
 
 .page-link a {
   color: blue;
 }
 
-footer a {
-  color: pink;
-}
 
-footer a:hover,
-a:hover {
-  color: hotpink;
-}
 
-footer a:active,
-a:active {
-  color: red;
-}
-
-nav {
-  background-color: white;
-}
-
-nav a {
-  color: black;
-}
-
-nav a:hover {
-  background-color: #ddd;
-}
-
-a {
-  color: #999;
-}
-
-nav a:active {
-  background-color: #888;
-  color: white;
-}
-
-#slogan {
-  background-color: blue;
-  color: white;
-  font-family: 'Pacifico', cursive;
-  font-size: 1.2em;
-  font-style: oblique;
-  line-height: 1.2em;
-  padding: 0.1em 0.5em 0.1em 0.5em;
-  text-align: center;
-}
 
 article {
   padding: 1em;
-}
-
-
-footer {
-  font-size: 0.707em;
-  line-height: 1.2em;
-  padding: 0.5em;
 }
 
 #emmanuel-logo {
@@ -400,32 +328,6 @@ form {
 
 /* Layout Styles */
 
-#social-media {
-  display: none;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul a {
-  display: flex;
-  flex-direction: column;
-}
-
-@supports (display:flex) {
-  nav ul li {
-    flex: 1 0 auto;
-    padding: 0.5em;
-    text-align: center;
-  }
-}
-
-#emmanuel-logo {
-  margin-bottom: 1em;
-  order: -1;
-}
-
 #contact-description {
   margin-bottom: 1em;
 }
@@ -480,7 +382,7 @@ nav ul a {
   padding-left: 4.5em;
 }
 
-@supports (display:grid) {
+@suppo  rts (display:grid) {
   #about-description h2 {
     font-size: 1.7em;
     font-style: italic;

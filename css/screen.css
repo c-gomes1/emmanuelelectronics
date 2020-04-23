@@ -92,7 +92,8 @@ article {
 
 #about-description,
 #about #description,
-#contact #contactInfo {
+#contact #contactInfo,
+#products main {
   margin-top: 1em;
 }
 
@@ -148,9 +149,14 @@ p {
 }
 
 
-#contactInfo h4 {
+#contactInfo h4,
+#products h4 {
   font-style: italic;
   padding: 0.5em 0 0.5em 0;
+}
+
+#products h4 {
+  text-align: center;
 }
 
 #contactInfo li {
@@ -195,12 +201,19 @@ form * {
   margin-top: 0.2em;
 }
 
+#products section {
+  margin-bottom: 1em;
+}
 
 
 /* Layout Styles */
 
-#social-media {
-  display: none; /* Will be handled in Project #4 */
+#social-media,
+.drop-down,
+.hidden,
+#prev,
+#next {
+  display: none;
 }
 
 i {
@@ -259,7 +272,8 @@ nav a {
 #about-description::after,
 #products-description::after,
 #about #description::after,
-#contact #contactInfo::after {
+#contact #contactInfo::after,
+#products section::before {
   content: "";
   display: block;
   border-bottom: 0.25em solid black;
@@ -272,8 +286,14 @@ nav a {
 }
 
 #about #description::after,
-#contact #contactInfo::after {
+#contact #contactInfo::after,
+#products section::before {
   margin: 0 auto;
   padding-top: 1em;
   width: 50%;
+}
+
+#products section::before {
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
 }

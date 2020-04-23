@@ -412,6 +412,27 @@ nav a {
     padding-top: 0.25em;
   }
 
+  form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  @supports (display:grid) {
+    form * {
+      margin: 0.5em 0 0.5em 0;
+    }
+
+    .inp-btn {
+      grid-column: 1 / -1;
+      margin-top: 0.25em;
+    }
+
+    label {
+      padding-right: 0.5em;
+    }
+  }
+
 }
 
 @media screen and (min-width: 320px) {
@@ -425,7 +446,8 @@ nav a {
   }
 
   p,
-  #team h4 {
+  #team h4,
+  #contact main {
     font-size: 1em;
     line-height: 1.414em;
   }
@@ -433,6 +455,11 @@ nav a {
   #about h3 {
     font-size: 1.414em;
   }
+
+  iframe {
+    height: 200px;
+  }
+
 }
 
 @media screen and (min-width: 400px) {
@@ -490,6 +517,14 @@ nav a {
     padding-bottom: 0.33em;
   }
 
+  input {
+    width: 40vw;
+  }
+
+  .inp-btn {
+    width: 100%
+  }
+
 }
 
 @media screen and (min-width: 500px) {
@@ -502,7 +537,8 @@ nav a {
   }
 
   p,
-  #team h4 {
+  #team h4,
+  #contact main {
     font-size: 1.2em;
     line-height: 1.414em;
   }
@@ -528,6 +564,10 @@ nav a {
   #telephone {
     max-width: 12em;
   }
+
+  iframe {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -547,6 +587,15 @@ nav a {
   #about #team {
     grid-template-columns: repeat(4,1fr);
   }
+
+  #contactInfo {
+    padding-bottom: 1em;
+  }
+
+  #contact #contactInfo::after {
+    padding-top: 3em;
+  }
+
 }
 
 @media screen and (min-width: 750px) {
@@ -563,7 +612,8 @@ nav a {
   }
 
   p,
-  #team h4 {
+  #team h4,
+  #contact main {
     font-size: 1.414em;
   }
 
@@ -581,6 +631,39 @@ nav a {
 
   #about #description img {
     margin-left: -2em;
+  }
+
+  iframe {
+    height: 350px;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+
+  #contact main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @supports (display:grid) {
+    #contact main {
+      font-size: 1em;
+      line-height: 1.414em;
+    }
+
+    input {
+      width: 20vw;
+    }
+
+    #contact #contactInfo::after {
+      display: none;
+    }
+
+    #enquiry {
+      margin-top: 1em;
+    }
+
   }
 
 }
@@ -607,12 +690,21 @@ nav a {
     width: 100%;
   }
 
+  #contact main {
+    font-size: 1.2em;
+  }
+
 }
 
 @media screen and (min-width: 1050px) {
   main {
     padding: 0 3em;
   }
+
+  #contact main {
+    grid-template-columns: 3fr 2fr;
+  }
+
 
 }
 
@@ -627,6 +719,10 @@ nav a {
 
   .employee img {
     width: 8em;
+  }
+
+  #contact main {
+    font-size: 1.414em;
   }
 
 }

@@ -182,29 +182,3 @@
 #prev:hover, #next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-
-
-/* Layout Styles */
-/* Contact Page */
-
-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-}
-
-@supports (display:grid) {
-  form * {
-    margin: 0.5em 0 0.5em 0;
-  }
-
-  .inp-btn {
-    grid-column: 1 / -1;
-    margin-top: 0.25em;
-  }
-
-  label {
-    padding-right: 0.5em;
-  }
-}

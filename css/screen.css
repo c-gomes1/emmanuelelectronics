@@ -448,7 +448,7 @@ nav a {
     border-radius: 0.25em;
     background: #F9F9F9;
     border: 0.1em solid #AAA;
-    border-bottom: 0.1 solid #777;
+    border-bottom: 0.1em solid #777;
     color: #282D31;
     z-index: 3;
     position: relative;
@@ -832,6 +832,10 @@ nav a {
     font-size: 1.2em;
   }
 
+  footer {
+    font-size: 1em;
+  }
+
   p,
   #team h4,
   #contact main {
@@ -999,6 +1003,53 @@ nav a {
     font-size: 2.7em;
     padding-right: 0.5em;
   }
+
+  #about-description {
+    align-items: flex-end;
+  }
+
+  #about-description h3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-left: 2em;
+  }
+
+  #about-description img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    max-width: 18em;
+  }
+
+  #about-description p {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  #about-description p:nth-of-type(2) {
+    align-self: flex-start;
+    grid-row: 3 / 4;
+  }
+
+  #products-description h3 {
+    font-size: 2em;
+  }
+
+  #contact-description {
+    display: grid;
+    grid-gap: 0.25em;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 3em;
+  }
+
+  #contact-description p {
+    grid-column: 2 / 3;
+    text-align: left;
+  }
+
+  #contact-description h3 {
+    margin-right: 2em;
+  }
+
 }
 
 @media screen and (min-width: 1017px) {

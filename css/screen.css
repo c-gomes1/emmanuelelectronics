@@ -249,8 +249,6 @@ form {
 }
 
 
-
-
 /* Module Styles */
 
 header,
@@ -278,7 +276,7 @@ nav a {
   display: block;
   border-bottom: 0.25em solid black;
   margin-top: 1em;
-  width: 33%;
+  width: 33vw;
 }
 
 #products-description::after {
@@ -290,10 +288,246 @@ nav a {
 #products section::before {
   margin: 0 auto;
   padding-top: 1em;
-  width: 50%;
+  width: 50vw;
 }
 
 #products section::before {
   padding-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+
+/* State Styles */
+
+@media screen and (min-width: 250px) {
+  #about-description {
+    display: grid;
+    grid-gap: 0.25em;
+    grid-template-columns: auto auto;
+  }
+
+  #robo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 40vw;
+  }
+
+  #builder {
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  #telephone {
+    width: 40vw;
+  }
+
+  #about-description h3 {
+    align-self: center;
+    grid-column: 2 / 3;
+  }
+
+  #about-description p,
+  #about-description::after,
+  #products-description::after,
+  #products-description h3,
+  #products-description p,
+  #builder {
+    grid-column: 1 / -1;
+  }
+
+  #products-description {
+    display: grid;
+    grid-gap: 0.25em;
+    grid-template-columns: repeat(3,auto);
+  }
+
+  .prod-img {
+    grid-row: 3 / 4;
+  }
+
+  main {
+    padding: 0 0.707em;
+  }
+
+  #about-description h3 {
+    font-size: 1.414em;
+  }
+
+  #about-description::after {
+
+  }
+
+}
+
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 1.7em;
+  }
+
+  #slogan {
+    font-size: 1.2em;
+    padding: 0.5em 0;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.414em;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.414em;
+    line-height: 1.414em;
+  }
+
+  #about-description h3 {
+    font-size: 1.7em;
+  }
+
+  main {
+    padding: 0 1em;
+  }
+
+  #about-description::after {
+    margin: 2em 0 0.5em 0;
+  }
+
+  #products-description p{
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+  }
+
+  #contact-description {
+    margin-top: 0.5em;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin-right: 0.1em;
+  }
+
+  nav li:last-of-type {
+    margin-right: 0;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  nav i {
+    padding-bottom: 0.33em;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.4em;
+  }
+
+  #slogan {
+    font-size: 1.414em;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.414em;
+  }
+
+  #about-description {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #about-description h3 {
+    font-size: 2em;
+    margin-right: auto;
+  }
+
+  #robo {
+    margin-left: auto;
+    max-width: 12em;
+  }
+
+  #builder {
+    max-width: 25em;
+  }
+
+  #telephone {
+    max-width: 12em;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #about-description::after {
+    margin: 3em 0 1.5em 0;
+  }
+
+  #products-description p{
+    margin-bottom: 2.5em;
+    padding-top: 1em;
+  }
+
+  #contact-description h3 {
+    margin-top: 2.5em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  #slogan {
+    font-size: 1.5em;
+  }
+
+  nav {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.414em;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  #about-description h3 {
+    font-size: 2.4em;
+  }
+
+  main {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .prod-img {
+    max-width: 17em;
+  }
+
+  #home article {
+    margin: 2em 0;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  main {
+    padding: 0 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 0 4em;
+  }
 }

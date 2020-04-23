@@ -349,12 +349,67 @@ nav a {
     padding: 0 0.707em;
   }
 
+  #about #description img {
+    margin-left: -0.707em;
+  }
+
   #about-description h3 {
     font-size: 1.414em;
   }
 
-  #about-description::after {
+  .head img {
+    width: 9em;
+  }
 
+  .employee img {
+    width: 6em;
+  }
+
+  #team {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(7,auto);
+    align-items: center;
+  }
+
+  #team h3 {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .head p {
+      align-self: flex-start;
+  }
+
+  #head1 {
+    grid-column: 1 / -1;
+  }
+
+  #head2 {
+    grid-column: 1 / -1;
+  }
+
+  .head {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 1.5em 1em 1.5em 1em;
+    align-items: center;
+  }
+
+  .head img {
+    grid-row: 1 / 3;
+    margin-left: auto;
+  }
+
+  .employee {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .employee * {
+    margin: 0 auto;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
   }
 
 }
@@ -369,9 +424,14 @@ nav a {
     padding: 0.5em 0;
   }
 
-  p {
+  p,
+  #team h4 {
     font-size: 1em;
     line-height: 1.414em;
+  }
+
+  #about h3 {
+    font-size: 1.414em;
   }
 }
 
@@ -391,6 +451,10 @@ nav a {
 
   main {
     padding: 0 1em;
+  }
+
+  #about #description img {
+    margin-left: -1em;
   }
 
   #about-description::after {
@@ -437,7 +501,8 @@ nav a {
     font-size: 1.414em;
   }
 
-  p {
+  p,
+  #team h4 {
     font-size: 1.2em;
     line-height: 1.414em;
   }
@@ -470,13 +535,17 @@ nav a {
     margin: 3em 0 1.5em 0;
   }
 
-  #products-description p{
+  #products-description p {
     margin-bottom: 2.5em;
     padding-top: 1em;
   }
 
   #contact-description h3 {
     margin-top: 2.5em;
+  }
+
+  #about #team {
+    grid-template-columns: repeat(4,1fr);
   }
 }
 
@@ -493,7 +562,8 @@ nav a {
     font-size: 1.2em;
   }
 
-  p {
+  p,
+  #team h4 {
     font-size: 1.414em;
   }
 
@@ -508,6 +578,11 @@ nav a {
   main {
     padding: 0 2em;
   }
+
+  #about #description img {
+    margin-left: -2em;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -518,16 +593,40 @@ nav a {
   #home article {
     margin: 2em 0;
   }
+
+  #head1 {
+    grid-column: 1 / 3;
+  }
+
+  #head2 {
+    grid-column: 3 / 5;
+  }
+
+  #about #description img {
+    margin-left: 0;
+    width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 1050px) {
   main {
     padding: 0 3em;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
   main {
     padding: 0 4em;
   }
+
+  .head img {
+    width: 12em;
+  }
+
+  .employee img {
+    width: 8em;
+  }
+
 }

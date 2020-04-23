@@ -31,7 +31,8 @@ a {
   text-decoration: none;
 }
 
-footer a {
+footer a,
+h1 a {
   color: pink;
 }
 

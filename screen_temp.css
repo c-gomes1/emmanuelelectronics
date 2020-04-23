@@ -1,9 +1,6 @@
 
 
 
-.page-link a {
-  color: blue;
-}
 
 
 
@@ -34,38 +31,6 @@ article {
 #telephone {
   width: 7em;
   margin-left: 10em;
-}
-
-#contact-description i {
-  display: block;
-}
-
-#contact-description p {
-  line-height: 1.3em;
-  text-align: right;
-  margin-right: 2em;
-}
-
-#products-description .page-link,
-#contact-description .page-link {
-  margin-top: 0.5em;
-}
-
-#contact-description::before {
-  content: "";
-  display: block;
-  border-top: 0.25em solid black;
-  margin-top: 1em;
-  margin-left: 12em;
-  width: 32%;
-}
-
-#about-description::after {
-  content: "";
-  display: block;
-  border-top: 0.25em solid black;
-  margin-top: 1.5em;
-  width: 80%;
 }
 
 /* About Page */
@@ -360,12 +325,8 @@ form {
 
 #products-description h2,
 #contact-description h2 {
-  font-size: 1.1em;
-  font-style: oblique;
-  font-weight: bold;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  text-align: center;
 }
 
 #contact-description h2 {

@@ -27,7 +27,7 @@ h1 {
 }
 
 a {
-  color: #999;
+  color: #888;
   text-decoration: none;
 }
 
@@ -36,12 +36,14 @@ footer a {
 }
 
 footer a:hover,
-a:hover {
+a:hover,
+.page-link a:hover {
   color: hotpink;
 }
 
 footer a:active,
-a:active {
+a:active,
+.page-link a:active {
   color: red;
 }
 
@@ -52,6 +54,10 @@ nav a:hover {
 nav a:active {
   background-color: #888;
   color: white;
+}
+
+.page-link a {
+  color: blue;
 }
 
 #slogan {
@@ -75,6 +81,45 @@ img {
   max-width: 100%;
 }
 
+main {
+  padding: 0 0.5em;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+#about-description {
+  margin-top: 1em;
+}
+
+#contact-description {
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.414em;
+  padding-bottom: 0.25em;
+}
+
+#builder {
+  padding: 0.5em 0;
+}
+
+#products-description{
+  text-align: center;
+}
+
+#contact-description {
+  text-align: right;
+}
 
 
 
@@ -82,6 +127,10 @@ img {
 
 #social-media {
   display: none; /* Will be handled in Project #4 */
+}
+
+#contact-description i {
+  display: block;
 }
 
 nav ul {
@@ -95,10 +144,15 @@ nav ul a {
 }
 
 @supports (display:flex) {
+
   nav ul li {
     flex: 1 0 auto;
-    padding: 0.1em;
+    padding-bottom: 0.1em;
     text-align: center;
+  }
+
+  nav ul:first-child {
+    padding-top: 0.1em;
   }
 }
 
@@ -120,4 +174,17 @@ nav a {
   background-color: #222;
   color: #bbb;
   padding: 0.25em;
+}
+
+#about-description::after,
+#products-description::after {
+  content: "";
+  display: block;
+  border-top: 0.25em solid black;
+  margin-top: 1em;
+  width: 33%;
+}
+
+#products-description::after {
+  margin-left: auto;
 }

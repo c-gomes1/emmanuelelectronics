@@ -89,11 +89,13 @@ article {
   margin-bottom: 2em;
 }
 
-#about-description {
+#about-description,
+#about #description {
   margin-top: 1em;
 }
 
-#contact-description {
+#contact-description,
+#about #team {
   margin-bottom: 1em;
 }
 
@@ -101,6 +103,13 @@ h3 {
   font-size: 1.1em;
   font-style: oblique;
   font-weight: bold;
+}
+
+#about h3,
+#contact h3,
+#products h3 {
+  margin: 0.5em 0 0.25em 0;
+  text-align: center;
 }
 
 p {
@@ -121,6 +130,20 @@ p {
   text-align: right;
 }
 
+#about #description img {
+  margin-left: -0.5em;
+  max-width: 100vw;
+}
+
+#about #team * {
+  padding: 0.25em 0;
+  text-align: center;
+}
+
+#about #team h3,
+#about #team p {
+  margin-bottom: 0.5em;
+}
 
 
 /* Layout Styles */
@@ -177,14 +200,23 @@ nav a {
 }
 
 #about-description::after,
-#products-description::after {
+#products-description::after,
+#about #description::after,
+#contact #contactInfo::after {
   content: "";
   display: block;
-  border-top: 0.25em solid black;
+  border-bottom: 0.25em solid black;
   margin-top: 1em;
   width: 33%;
 }
 
 #products-description::after {
   margin-left: auto;
+}
+
+#about #description::after,
+#contact #contactInfo::after {
+  margin: 0 auto;
+  padding-top: 1em;
+  width: 50%;
 }

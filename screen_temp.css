@@ -1,111 +1,5 @@
 
 
-
-
-
-
-
-article {
-  padding: 1em;
-}
-
-#emmanuel-logo {
-  width: 6em;
-}
-
-#robo {
-  width: 7em;
-}
-
-#products-description .prod-img {
-  padding: 0.5em;
-  padding-top: 1em;
-  width: 80%;
-}
-
-#builder {
-  text-align: center;
-  width: 10em;
-}
-
-#telephone {
-  width: 7em;
-  margin-left: 10em;
-}
-
-/* About Page */
-
-#about #description img {
-  margin-left: -1em;
-  margin-bottom: 0.5em;
-  width: 100vw;
-}
-
-#about h3,
-#contact h3,
-#products h3,
-#enquiry h4,
-#products h4 {
-  font-size: 1.2em;
-  font-weight: bold;
-  padding-bottom: 0.25em;
-  text-align: center;
-}
-
-#about p {
-  font-size: 0.9em;
-  margin-bottom: 0.5em;
-}
-
-#about #description::after,
-#contact #contactInfo::after {
-  border-bottom: 0.2em solid black;
-  content: "";
-  display: block;
-  margin: 0 auto;
-  padding-top: 1em;
-  width: 50%;
-}
-
-/* Contact Page */
-
-#contactInfo h4 {
-  font-style: italic;
-  padding: 0.5em 0 0.5em 0;
-}
-
-#contactInfo li {
-  font-size: 0.8em;
-}
-
-#contactInfo ol li,
-#phone,
-#email {
-  background: url('../media/img/loc-icon.png') no-repeat top left;
-  list-style: none;
-  padding-bottom: 0.5em;
-  /* Padding for icon image */
-  padding-left: 35px;
-  padding-top: 4px;
-}
-
-#phone {
-  background: url('../media/img/phone-icon.png') no-repeat top left;
-}
-
-#email {
-  background: url('../media/img/email-icon.png') no-repeat top left;
-}
-
-iframe {
-  height: 200px;
-  width: 100%;
-}
-
-form {
-  margin: 0.5em auto 0.5em auto;
-}
-
 /* Products Page */
 
 #products h3 {
@@ -293,9 +187,7 @@ form {
 
 /* Layout Styles */
 
-#contact-description {
-  margin-bottom: 1em;
-}
+
 
 #about-description,
 #products-description {

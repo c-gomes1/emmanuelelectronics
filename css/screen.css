@@ -567,6 +567,22 @@ nav a {
 
 @media screen and (min-width: 320px) {
 
+  .drop-down li.highlight {
+    background-color: yellow;
+  }
+
+  .drop-down li.highlight a {
+    color: black;
+  }
+
+  .drop-down li.highlight a:hover {
+    color: lightgreen;
+  }
+
+  .drop-down li.highlight a:active {
+    color: white;
+  }
+
   #error main {
     align-items: center;
     grid-template-columns: 1fr 2fr;
@@ -715,6 +731,25 @@ nav a {
 
   #prev:hover, #next:hover {
     background-color: rgba(0,0,0,0.8);
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 799px) {
+  .drop-down li.highlight {
+    background-color: white;
+  }
+
+  .drop-down li.highlight a {
+    color: #888;
+  }
+
+  .drop-down li.highlight a:active {
+    color: red;
+  }
+
+  .drop-down li.highlight a:hover {
+    color: hotpink;
   }
 
 }

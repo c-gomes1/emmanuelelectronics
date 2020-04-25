@@ -691,7 +691,7 @@ nav a {
   #next {
     border-radius: 0 0.1em 0.1em 0;
     color: white;
-    /*cursor: pointer;*/
+    cursor: pointer;
     font-weight: bold;
     font-size: 1.404em;
     padding: 0.25em;
@@ -712,11 +712,11 @@ nav a {
     right: 0;
     border-radius: 0.1em 0 0 0.1em;
   }
-/*
+
   #prev:hover, #next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-*/
+
 }
 
 @media screen and (min-width: 400px) {

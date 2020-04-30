@@ -476,111 +476,22 @@ nav a {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 799px) {
-
-  .drop-down {
-    margin: 0 auto;
-    position: relative;
-    width: 90%;
-  }
-
-  .prod-selected {
-    cursor: pointer;
-    height: 1.5em;
-    line-height: 1.6em;
-    border-radius: 0.25em;
-    background: #F9F9F9;
-    border: 0.1em solid #AAA;
-    border-bottom: 0.1em solid #777;
-    color: #282D31;
-    z-index: 3;
-    position: relative;
-    -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
-    -webkit-transition-delay: .8s;
-    text-align: center;
-  }
-
-  .prod-selected:hover,
-  .products-drop-down:hover ~ .prod-selected {
-    background: #fff;
-    -webkit-transition-delay: 0s, 0s, 0s;
-  }
-
-  .products-drop-down:hover ~ .prod-selected {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    z-index: 0;
-  }
-
-  .products-drop-down {
-    overflow: hidden;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    height: 0;
-    width: 99%;
-    padding-top: 2.54em;
-    -webkit-transition: height .5s ease;
-    -webkit-transition-delay: .4s;
-    border: 0.1em solid #777;
-    border-radius: 0.25em;
-    box-shadow: 0 0.1em 0.15em rgba(0,0,0,.4);
-  }
-
-  .drop-down:active .products-drop-down {
-    height: 15em;
-    z-index: 2;
-    -webkit-transition-delay: 0s;
-  }
-
-  .products-drop-down:hover {
-    height: 10.6em;
-    z-index: 2;
-    -webkit-transition-delay: 0s;
-  }
-
-  .products-drop-down li:hover {
-    background: #eee;
-    color: #333;
-  }
-
-  .products-drop-down li {
-    text-align: center;
-    color: #888;
-    font-size: 0.8em;
-    height: 1.5em;
-    border-top: 0.1em solid #ccc;
-    padding: 0.5em 0 0.5em 0;
-  }
-
-  .products-drop-down li:last-of-type {
-    border-bottom-left-radius: 0.25em;
-    border-bottom-right-radius: 0.25em;
-  }
-
-  .drop-down {
-      display: block;
-  }
-
-}
-
 @media screen and (min-width: 320px) {
 
   .drop-down li.highlight {
-    background-color: yellow;
+    background-color: white;
   }
 
   .drop-down li.highlight a {
-    color: black;
-  }
-
-  .drop-down li.highlight a:hover {
-    color: lightgreen;
+    color: #888;
   }
 
   .drop-down li.highlight a:active {
-    color: white;
+    color: red;
+  }
+
+  .drop-down li.highlight a:hover {
+    color: hotpink;
   }
 
   #error main {
@@ -733,26 +644,93 @@ nav a {
     background-color: rgba(0,0,0,0.8);
   }
 
-}
-
-@media screen and (min-width: 320px) and (max-width: 799px) {
-  .drop-down li.highlight {
-    background-color: white;
+  .drop-down {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
   }
 
-  .drop-down li.highlight a {
+  .prod-selected {
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.6em;
+    border-radius: 0.25em;
+    background: #F9F9F9;
+    border: 0.1em solid #AAA;
+    border-bottom: 0.1em solid #777;
+    color: #282D31;
+    z-index: 3;
+    position: relative;
+    -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
+    -webkit-transition-delay: .8s;
+    text-align: center;
+  }
+
+  .prod-selected:hover,
+  .products-drop-down:hover ~ .prod-selected {
+    background: #fff;
+    -webkit-transition-delay: 0s, 0s, 0s;
+  }
+
+  .products-drop-down:hover ~ .prod-selected {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 0;
+  }
+
+  .products-drop-down {
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 0;
+    width: 99%;
+    padding-top: 2.54em;
+    -webkit-transition: height .5s ease;
+    -webkit-transition-delay: .4s;
+    border: 0.1em solid #777;
+    border-radius: 0.25em;
+    box-shadow: 0 0.1em 0.15em rgba(0,0,0,.4);
+  }
+
+  .drop-down:active .products-drop-down {
+    height: 15em;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+  }
+
+  .products-drop-down:hover {
+    height: 10.6em;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+  }
+
+  .products-drop-down li:hover {
+    background: #eee;
+    color: #333;
+  }
+
+  .products-drop-down li {
+    text-align: center;
     color: #888;
+    font-size: 0.8em;
+    height: 1.5em;
+    border-top: 0.1em solid #ccc;
+    padding: 0.5em 0 0.5em 0;
   }
 
-  .drop-down li.highlight a:active {
-    color: red;
+  .products-drop-down li:last-of-type {
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
   }
 
-  .drop-down li.highlight a:hover {
-    color: hotpink;
+  .drop-down {
+      display: block;
   }
 
 }
+
 
 @media screen and (min-width: 400px) {
   #error #site-index {
@@ -1018,6 +996,105 @@ nav a {
 }
 
 @media screen and (min-width: 800px) {
+
+  .drop-down li.highlight {
+    background-color: yellow;
+  }
+
+  .drop-down li.highlight a {
+    color: black;
+  }
+
+  .drop-down li.highlight a:hover {
+    color: lightgreen;
+  }
+
+  .drop-down li.highlight a:active {
+    color: white;
+  }
+
+  .drop-down {
+    margin: 0;
+    position: static;
+    width: auto;
+  }
+
+  .prod-selected {
+    cursor: auto;
+    height: auto;
+    line-height: normal;
+    border-radius: 0;
+    background: white;
+    border: 0;
+    border-bottom: 0;
+    color: black;
+    z-index: auto;
+    position: static;
+    -webkit-transition: border-radius 0s linear, background 0s linear, z-index 0s linear;
+    -webkit-transition-delay: 0s;
+    text-align: left;
+  }
+
+  .prod-selected:hover,
+  .products-drop-down:hover ~ .prod-selected {
+    background: white;
+    -webkit-transition-delay: 0s, 0s, 0s;
+  }
+
+  .products-drop-down:hover ~ .prod-selected {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: auto;
+  }
+
+  .products-drop-down {
+    overflow: visible;
+    background: black;
+    position: static;
+    z-index: auto;
+    height: auto;
+    width: auto;
+    padding-top: 0;
+    -webkit-transition: height 0s ease;
+    -webkit-transition-delay: 0s;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .drop-down:active .products-drop-down {
+    height: auto;
+    z-index: auto;
+    -webkit-transition-delay: 0s;
+  }
+
+  .products-drop-down:hover {
+    height: auto;
+    z-index: auto;
+    -webkit-transition-delay: 0s;
+  }
+
+  .products-drop-down li:hover {
+    background: white;
+    color: black;
+  }
+
+  .products-drop-down li {
+    text-align: left;
+    color: black;
+    height: auto;
+    border-top: 0;
+    padding: 0;
+  }
+
+  .products-drop-down li:last-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .drop-down {
+      display: block;
+  }
 
   #contact main {
     display: grid;

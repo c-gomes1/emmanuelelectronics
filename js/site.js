@@ -2,7 +2,7 @@ document.querySelector('HTML').className = "js";
 
 // IDs of products to scroll through
 var products = ['#transformer', '#freq-converter', '#charger', '#inverter', '#stabilizer'];
-var fullProdNames = ['Constant Voltage Trasformers', 'Frequency Converters', 'Industrial Battery Charger', 'Power Inverters', 'Servo Stabilizers']
+var fullProdNames = ['Constant Voltage Transformers', 'Frequency Converters', 'Industrial Battery Charger', 'Power Inverters', 'Servo Stabilizers']
 
 // Get buttons from HTML
 var prev = document.getElementById('prev');

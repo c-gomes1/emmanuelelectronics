@@ -384,6 +384,7 @@ nav a {
 
   .prod-img {
     grid-row: 3 / 4;
+    margin: 0 auto;
   }
 
   main {
